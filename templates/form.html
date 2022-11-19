@@ -1,0 +1,16 @@
+<form>
+    {{ form.hidden_tag() }}
+
+  <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">{{ form.email.label }}</label>
+    <div class="col-sm-10">
+        {{ form.email(class_="form-control form-control-l",  placeholder="Enter your email") }}
+    </div>
+
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">{{ form.password.label }}</label>
+    <div class="col-sm-10">
+        {{ form.password(class_="form-control form-control-l",  placeholder="Enter your password") }}
+    </div>
+      <button type="submit" class="btn">Light</button>
+  </div>
+</form>
